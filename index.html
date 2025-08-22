@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Taxi Karim - Chauffeur privé Paris</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <header>
+    <h1>TABTI Amrane</h1>
+    <a href="tel:+33761697694">📞 Réserver</a>
+  </header>
+
+  <section class="hero">
+    <h2>Votre chauffeur privé 24/7 à Paris</h2>
+    <p>Transferts aéroports – Trajets professionnels – Déplacements privés</p>
+    <a href="tel:+33761697694" class="btn">Appeler maintenant</a>
+    <a href="https://wa.me/33761697694" class="btn">Réserver WhatsApp</a>
+  </section>
+
+  <section>
+    <h2>À propos</h2>
+    <div class="about">
+      <div class="photo"></div>
+      <p>Bonjour, je suis Amrane, chauffeur professionnel avec plus de 10 ans d’expérience. Je vous propose des trajets confortables, sécurisés et ponctuels dans toute la région parisienne et au-delà.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Services</h2>
+    <div class="services">
+      <div class="card"><h3>✈️ Transferts aéroports</h3><p>Paris-CDG, Orly, Beauvais.</p></div>
+      <div class="card"><h3>🏙️ Trajets locaux</h3><p>Déplacements dans Paris et banlieue.</p></div>
+      <div class="card"><h3>💼 Mise à disposition</h3><p>Chauffeur privé pour entreprises et événements.</p></div>
+      <div class="card"><h3>🌍 Longue distance</h3><p>France sur demande.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Tarifs indicatifs</h2>
+    <ul>
+      <li>Paris → CDG : à partir de 50€</li>
+      <li>Paris → Orly : à partir de 40€</li>
+      <li>Mise à disposition 1h : à partir de 60€</li>
+    </ul>
+    <p><em>Tarifs variables selon trafic et distance. Contactez-moi pour un devis précis.</em></p>
+  </section>
+
+  <!-- ====== CARROUSEL / AVIS CLIENTS ====== -->
+  <section>
+    <h2>Avis clients</h2>
+
+    <div class="slider">
+      <!-- Radios (ne pas modifier les id) -->
+      <input type="radio" name="testimonial" id="t-1" />
+      <input type="radio" name="testimonial" id="t-2" />
+      <input type="radio" name="testimonial" id="t-3" checked />
+      <input type="radio" name="testimonial" id="t-4" />
+      <input type="radio" name="testimonial" id="t-5" />
+
+      <!-- Slides -->
+      <div class="testimonials">
+        <label class="item" for="t-1">
+          <div class="mycard">
+            <div class="review-card">
+              <div class="avatar" role="img" aria-label="Photo de Jean Dupont"></div>
+              <div class="name">Jean Dupont</div>
+              <div class="stars" aria-label="5 étoiles">⭐⭐⭐⭐⭐</div>
+              <p class="review-text">Chauffeur ponctuel et très sympathique, je recommande !</p>
+            </div>
+          </div>
+        </label>
+
+        <label class="item" for="t-2">
+          <div class="mycard">
+            <div class="review-card">
+              <div class="avatar" role="img" aria-label="Photo de Marie Curie"></div>
+              <div class="name">Marie Curie</div>
+              <div class="stars" aria-label="5 étoiles">⭐⭐⭐⭐⭐</div>
+              <p class="review-text">Voiture propre et confortable.</p>
+            </div>
+          </div>
+        </label>
+
+        <label class="item" for="t-3">
+          <div class="mycard">
+            <div class="review-card">
+              <div class="avatar" role="img" aria-label="Photo de Ali B."></div>
+              <div class="name">Ali B.</div>
+              <div class="stars" aria-label="5 étoiles">⭐⭐⭐⭐⭐</div>
+              <p class="review-text">Excellent service, je ferai appel à Karim à chaque voyage !</p>
+            </div>
+          </div>
+        </label>
+
+        <label class="item" for="t-4">
+          <div class="mycard">
+            <div class="review-card">
+              <div class="avatar" role="img" aria-label="Photo de Sophie L."></div>
+              <div class="name">Sophie L.</div>
+              <div class="stars" aria-label="4 étoiles">⭐⭐⭐⭐</div>
+              <p class="review-text">Très professionnel et à l'heure. Je recommande.</p>
+            </div>
+          </div>
+        </label>
+
+        <label class="item" for="t-5">
+          <div class="mycard">
+            <div class="review-card">
+              <div class="avatar" role="img" aria-label="Photo de Marc D."></div>
+              <div class="name">Marc D.</div>
+              <div class="stars" aria-label="5 étoiles">⭐⭐⭐⭐⭐</div>
+              <p class="review-text">Communication facile, tarif correct, trajet confortable.</p>
+            </div>
+          </div>
+        </label>
+      </div>
+
+      <!-- Dots -->
+      <div class="dots">
+        <label for="t-1" aria-label="Aller à l’avis 1"></label>
+        <label for="t-2" aria-label="Aller à l’avis 2"></label>
+        <label for="t-3" aria-label="Aller à l’avis 3"></label>
+        <label for="t-4" aria-label="Aller à l’avis 4"></label>
+        <label for="t-5" aria-label="Aller à l’avis 5"></label>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Réservation rapide</h2>
+    <form>
+      <input type="text" placeholder="Votre nom" required>
+      <input type="tel" placeholder="Téléphone" required>
+      <input type="datetime-local" required>
+      <input type="text" placeholder="Adresse de départ" required>
+      <input type="text" placeholder="Adresse d'arrivée" required>
+      <textarea placeholder="Message (optionnel)"></textarea>
+      <button type="submit">Envoyer la demande</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 TABTI Amrane | 📞 07 61 69 76 94 | Mentions légales</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
