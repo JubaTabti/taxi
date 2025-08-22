@@ -94,7 +94,7 @@ button {
    texte d’avis en dessous.
 ========================================================= */
 
-.slider { width: 100%; min-height: 385px; }
+.slider { width: 100%;}
 .slider input { display: none; }
 
 .testimonials {
