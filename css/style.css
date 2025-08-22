@@ -41,8 +41,8 @@ header a {
 .hero {
   text-align: center;
   padding: 3rem 1rem;
-  background: url('https://picsum.photos/800/500?blur=2') center/cover no-repeat;
-  color: #fff;
+  /*background: url('https://picsum.photos/800/500?blur=2') center/cover no-repeat;*/
+  color: #000000;
 }
 .hero h2 { font-size: 1.8rem; margin-bottom: .3rem; }
 .hero p { margin-bottom: 1rem; }
