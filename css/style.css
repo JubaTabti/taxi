@@ -77,6 +77,21 @@ section {
 }
 .card h3 { margin-top: 0; }
 
+/* ====== Tarifs ====== */
+.tarifs h2 {
+  margin-bottom: 4px; /* espace réduit sous le titre */
+}
+
+.tarifs ul {
+  margin-top: 0;      /* supprime l’espace au-dessus */
+  margin-bottom: 8px; /* petit espace après la liste */
+  padding-left: 20px; /* garde les puces indentées */
+}
+
+.tarifs p {
+  margin-top: 0; /* supprime l’espace au-dessus du texte */
+}
+
 /* Form */
 form { display: grid; gap: 1rem;}
 input, textarea, button {
@@ -102,7 +117,7 @@ button {
   align-items: center;
   justify-content: center;
   position: relative;
-  min-height: 250px;
+  min-height: 200px;
   perspective: 500px;
   margin-top: 1rem;
   overflow: hidden;
@@ -167,7 +182,7 @@ button {
 /* texte d’avis en dessous */
 .review-text {
   grid-area: text;
-  margin-top: 4px;
+  margin-top: 10px;
   color: #374151;
 }
 
