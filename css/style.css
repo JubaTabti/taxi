@@ -132,9 +132,10 @@ button {
   grid-template-columns: 56px 1fr;
   grid-template-areas:
     "avatar name"
-    "stars  name"
+    "avatar stars"
     "text   text";
-  gap: 8px 12px;
+  row-gap: 1px;   /* espace vertical réduit */
+  column-gap: 12px; /* espace horizontal conservé */
 }
 
 /* avatar rond noir */
@@ -160,7 +161,7 @@ button {
   line-height: 1;
   font-size: 1rem;
   color: #f59e0b; /* doré lisible */
-  margin-top: 4px;
+  margin-top: 0px;
 }
 
 /* texte d’avis en dessous */
