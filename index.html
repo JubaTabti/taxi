@@ -6,6 +6,10 @@
   <title>Taxi Amrane - Chauffeur privé Paris</title>
   <link rel="stylesheet" href="css/style.css"/>
 </head>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="js/main.js"></script>
+
 <body>
   <header>
     <h1>TABTI Amrane</h1>
@@ -128,18 +132,25 @@
     </div>
   </section>
 
-  <section>
-    <h2>Réservation rapide</h2>
-    <form>
-      <input type="text" placeholder="Votre nom" required>
-      <input type="tel" placeholder="Téléphone" required>
-      <input type="text" placeholder="Date et heure" required onfocus="this.type='datetime-local'" onblur="if(!this.value) this.type='text'">
-      <input type="text" placeholder="Adresse de départ" required>
-      <input type="text" placeholder="Adresse d'arrivée" required>
-      <textarea placeholder="Message (optionnel)"></textarea>
-      <button type="submit">Envoyer la demande</button>
-    </form>
-  </section>
+<section>
+  <h2>Réservation rapide</h2>
+
+  <form id="booking-form">
+    <input type="text" name="from_name" placeholder="Votre nom" required>
+    <input type="tel"  name="phone" placeholder="Téléphone" required>
+    <input type="datetime-local" name="ride_datetime" required>
+    <input type="text" name="pickup"  placeholder="Adresse de départ" required>
+    <input type="text" name="dropoff" placeholder="Adresse d'arrivée" required>
+    <textarea name="message" placeholder="Message (optionnel)"></textarea>
+
+    <!-- Honeypot anti-bot (ne pas remplir) -->
+    <input type="text" name="company" tabindex="-1" autocomplete="off" style="position:absolute;left:-5000px;">
+
+    <button type="submit" id="booking-submit">Envoyer la demande</button>
+    <p id="form-status" aria-live="polite" style="margin-top:.5rem;"></p>
+  </form>
+</section>
+
 
   <footer>
     <p>© 2025 TABTI Amrane | 📞 07 61 69 76 94 | Mentions légales</p>
